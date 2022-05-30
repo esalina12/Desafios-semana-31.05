@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    background-size: 100%;
+    background-image: url(/img/fondo6.jpeg);
+    background-attachment: fixed;
+    color: aliceblue;
+}
+
+
+
+
+/*--------------------------------- Encabezado --------------------------------------*/
+.header{
+    grid-area: header;
+}
+
+.nav-header {
+    background-color: #844DAD;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    }
+
+nav ul{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+nav ul li{   
+    font-size: 22px;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/*--------------------- Fin encabezado---------------------------- */
+
+
+
+
+
+
+/* -----------------------------footer ------------------------------*/
+
+.footer{
+    display: grid;
+    grid-area: footer;
+}
+.nav-footer{
+    background-color: #844DAD;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    width: 10em;
+    height: auto;
+    border-radius: 50%;
+}
+
+.nav-footer h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 65%;
+    color: aliceblue;
+}
+.box-footer{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-footer img{
+    width: 10%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.box-social{
+    width: auto;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.box-social img{
+    width: 3em;
+    height: 3em;
+    padding: 2px;
+}
+
+.box-social h4{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 1px;
+    color: aliceblue;
+}
+/* -----------------------------------------fin footer------------------------------ */
+
+
+
+
+
+
+    /*   -------------------------------I N I C I O----------------------------- */
+
+/* Main */
+
+.body-grid-inicio{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5em auto 1fr;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+}
+
+.main-inicio{
+    display: grid;
+    grid-area: main;
+    gap: 5px;
+}
+
+
+/*    Titulo       */
+
+.main-title-inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin: 3em;
+}
+
+/*    Fin titulo    */
+
+/*     IMAGENES     */
+
+.container-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5em 0 5em 0;
+}
+
+
+.box-img{
+    width: 30%;
+    display: inline-block;
+    align-items: center;
+}
+
+.box-img img{
+    width: 100%;
+    height: 70%;
+}
+/* FIN IMAGENES */
+
+/*      Fin main        */
+
+/* --------------------------------------F I N    I N I C I O ------------------*/
+
+
+
+
+
+
+/* ---------------------------------------------NOSOTROS----------------------------------------- */
+
+.body-grid-nosotros{
+    display: grid;
+    grid-template-areas:"header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 2fr 2fr 2fr;   
+}
+
+.main-nosotros{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "dir dir dir"
+    "info info info"
+    "mision objetivos lema";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 20em;
+    gap: 2em;
+}
+
+.dir{
+    grid-area: dir;
+}
+
+.box-dir{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ceo, .vice{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.dir img{
+    height: 30em;
+    border-radius: 50%;
+}
+
+.dir p{
+    font-size: 3em;
+}
+
+.info{
+    grid-area: info;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.info-p{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    font-size: 2em;
+}
+
+.mision{
+    grid-area: mision;
+}
+
+.objetivos{
+    grid-area: objetivos;
+}
+.lema{
+    grid-area: lema;
+}
+
+.mision, .objetivos, .lema{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.mision img, .objetivos img, .lema img{
+    border-radius: 50%;
+}
+
+
+
+/* -----------------------------------FIN NOSOTROS------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- NUESTROS CLIENTES---------------------------------- */
+
+.body-grid-nc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+
+.main-nc{
+    grid-area: main;
+    
+}
+
+.main-nc img{
+    width: 60%;
+    height: 60%;
+}
+
+.ref1{
+    grid-area: ref1;
+}
+.ref2{
+    grid-area: ref2;
+}
+.ref3{
+    grid-area: ref3;
+}
+.ref4{
+    grid-area: ref4;
+}
+.ref5{
+    grid-area: ref5;
+}
+.ref6{
+    grid-area: ref6;
+}
+.ref7{
+    grid-area: ref7;
+}
+.ref8{
+    grid-area: ref8;
+}
+.ref9{
+    grid-area: ref9;
+}
+
+#box-refer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/* --------------------------- FIN NUESTROS CLIENTES----------------------- */
+
+
+
+
+
+/* -----------------------------CONTACTO-------------------------------- */
+
+.body-grid-contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header header"
+    "main main main"
+    "footer footer footer";
+    gap: 2em;
+}
+
+.main-contacto{
+    width: 100%;
+    grid-area: main;
+}
+
+
+.box-mapa{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   justify-items: center;
+}
+
+.grid-contacto{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10em 10em;
+    grid-template-areas: "fb ig mail"
+    "wp tel mail";
+    justify-content: center;
+    justify-items: center;
+    gap: 2em;
+}
+
+.grid-contacto div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.grid-contacto img{
+    height: 50%;
+    margin: 1em;
+    border-radius: 100%;
+}
+
+.mail img{
+    width: 20%;
+    height: 30%;
+}
+
+.fb{
+    grid-area: fb;
+}
+.ig{
+    grid-area: ig;
+}
+.wp{
+    grid-area: wp;
+}
+.tel{
+    grid-area: tel;
+}
+.mail{
+    grid-area: mail;
+}
+
+
+
+
+/* ---------------FIN CONTACTO---------------- */
+
+
+
+
+
+/* ------------------------SERVICIOS---------------------------- */
+
+.body-grid-servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+.main-servicios{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-areas: "ns ns ns"
+    "op1 op2 op3"
+    "op4 op5 op6";
+    justify-content: center;
+    justify-items: center;
+}
+
+.img-ns{
+    grid-area: ns;
+    height: 100%;
+}
+
+.img-ns img{
+    width: 100%;
+   height: 100%;
+}
+
+.img-ns p{
+    width: 30%;
+    font-size: 25px;
+    position: relative;
+    bottom: 6em;
+    z-index: 1;
+    color: black;
+}
+
+.op1{
+    grid-area: op1;
+}
+.op2{
+    grid-area: op2;
+}
+.op3{
+    grid-area: op3;
+}
+.op4{
+    grid-area: op4;
+}
+.op5{
+    grid-area: op5;
+}
+.op6{
+    grid-area: op6;
+}
+
+.op1, .op2, .op3, .op4, .op5, .op6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.op1 img, .op2 img, .op3 img, .op4 img, .op5 img, .op6 img{
+    width: 100%;
+    height: 60%;
+    border-radius: 30%;
+}
