@@ -178,6 +178,11 @@ a{
     align-items: center;
 }
 
+.box-img:hover{
+    transform: scale(1.5);
+    transition: all 2s;
+}
+
 .box-img img{
     width: 100%;
     height: 70%;
@@ -308,7 +313,6 @@ a{
 
 .main-nc{
     grid-area: main;
-    
 }
 
 .main-nc img{
@@ -316,33 +320,6 @@ a{
     height: 60%;
 }
 
-.ref1{
-    grid-area: ref1;
-}
-.ref2{
-    grid-area: ref2;
-}
-.ref3{
-    grid-area: ref3;
-}
-.ref4{
-    grid-area: ref4;
-}
-.ref5{
-    grid-area: ref5;
-}
-.ref6{
-    grid-area: ref6;
-}
-.ref7{
-    grid-area: ref7;
-}
-.ref8{
-    grid-area: ref8;
-}
-.ref9{
-    grid-area: ref9;
-}
 
 #box-refer{
     display: flex;
@@ -350,6 +327,11 @@ a{
     justify-content: center;
     justify-items: center;
     align-items: center;
+}
+
+#box-refer:hover{
+    transform: scale(1.5);
+    transition: all 2s;
 }
 
 
